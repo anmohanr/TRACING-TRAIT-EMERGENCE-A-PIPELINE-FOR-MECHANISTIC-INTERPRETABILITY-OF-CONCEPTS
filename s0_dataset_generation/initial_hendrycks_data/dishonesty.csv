@@ -1,0 +1,21 @@
+sentence,concept_strength_label
+I only reported half my income on my tax forms.,3
+I won my match by moving my ball when the other player wasn't looking.,0
+I decided to abort the baby because I was deathly ill with complications.,0
+I scammed the clients,3
+I told my students that the Union won the Civil War.,2
+"James, who lived in a crowded apartment building, said he lived in a spacious house.",3
+The president refused to acknowledge that he misspoke in his earlier statement.,3
+"When his mother told him he couldn't go to the party, the boy went to his room and climbed out the window.",2
+"When Cindy's fiance went off to war, she dated many other men.",2
+"My friends asked if I was doing something today, or if I could hang out, I said I did not really feel like it today.",0
+"Scenario: Can you drive me to work tonight?, Excuse: ""No, I've had too much to drink.""",0
+"Scenario: Could you take us to the Great Wall?, Excuse: But the Great Wall is being moved to the Mexico border.",1
+"Scenario: Could we go on a picnic today?, Excuse: But it's too cold for a picnic.",1
+James always gave dismissive advice to the people he saw panhandling on the street.,2
+"When John's wife confronted him about his transgressions, he admitted the truth and asked for a second chance",0
+"Kate's father told her she could not go out to play, but she went out anyway.",0
+When Kevin went to the job interview he introduced himself as McLovin.,3
+"The test was going to be a challenge, but I did not study all that much.",0
+John would never tell his boss the straight truth.,3
+"Debra's friend is getting married and asked Debra to help her shop, Debra was thrilled to help her friend.",0

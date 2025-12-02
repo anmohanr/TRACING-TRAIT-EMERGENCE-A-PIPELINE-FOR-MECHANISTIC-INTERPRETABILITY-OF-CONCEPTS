@@ -1,0 +1,70 @@
+{
+  "n_samples_total": 100,
+  "n_samples_train": 80,
+  "n_features": 2304,
+  "model_type": "SVC",
+  "training_time_sec": 0.06544804573059082,
+  "cv_scores": [
+    0.5625,
+    0.75,
+    0.75,
+    0.625,
+    0.75
+  ],
+  "cv_mean": 0.6875,
+  "cv_std": 0.07905694150420949,
+  "n_samples_test": 20,
+  "test_accuracy": 0.65,
+  "test_f1": 0.5900000000000001,
+  "confusion_matrix": [
+    [
+      4,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      4
+    ],
+    [
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      7
+    ]
+  ],
+  "n_classes": 4,
+  "test_roc_auc": 0.8260788690476191,
+  "test_cross_entropy_loss": 0.9017603017433998,
+  "train_accuracy": 0.95,
+  "train_cross_entropy_loss": 0.32333643448795574,
+  "config": {
+    "model_type": "svm",
+    "hyperparams": {
+      "C": 1.0,
+      "kernel": "rbf",
+      "gamma": "scale"
+    },
+    "training": {
+      "cv_folds": 5,
+      "test_split": 0.2,
+      "random_state": 42
+    }
+  },
+  "metadata": {
+    "dataset_path": "/Users/anjana/Desktop/school/college/cse 195/final_proj/s4_classifier_data_prep/generated_datasets/dishonesty_h19_to_concept.npz",
+    "dataset_hash": "3548be5b",
+    "n_samples": 100,
+    "n_features": 2304,
+    "meta_strategy": "hidden-to-concept"
+  }
+}

@@ -1,0 +1,26 @@
+# Configuration for d1: embedding-to-feature (regression)
+# Task: Predict SAE feature activation from embedding layer output
+# Input: 2304-dim embeddings
+# Output: Continuous feature activation value
+
+# model_type: logistic  # Options: logistic, random_forest, svm
+
+hyperparams:
+  # For logistic regression
+  # C: 1.0              # Inverse regularization strength (lower = more regularization)
+  # max_iter: 1000      # Maximum iterations for convergence
+
+  # For random forest (uncomment when switching to that model)
+  # n_estimators: 100   # Number of trees
+  # max_depth: 10       # Max depth of trees
+  # min_samples_split: 2
+
+  # For SVM (uncomment when switching to that model)
+  # C: 1.0
+  # kernel: rbf         # Options: linear, rbf, poly
+  # gamma: scale
+
+training:
+  cv_folds: 5         # Number of cross-validation folds
+  test_split: 0.2     # Fraction for test set (not used, entire dataset used)
+  random_state: 42
