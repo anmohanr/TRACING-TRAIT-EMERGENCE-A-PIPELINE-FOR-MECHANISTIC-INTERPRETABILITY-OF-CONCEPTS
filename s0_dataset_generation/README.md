@@ -20,7 +20,7 @@ Each dataset contains sentences labeled on a 0-3 scale based on **Anthropic's Co
 ## Four-Step Generation Process
 
 ### Step 1: Seed Data Collection
-We started with 20 hand-selected sentences per trait from the **Hendrycks dataset** (located in `initial_hendrycks_data/`). Each sentence was already labeled with a concept strength score (0-3), providing high-quality seed examples across all label levels.
+We started with 20 hand-selected sentences per trait from the **Hendrycks dataset** (located in `seed_data/`). Each sentence was already labeled with a concept strength score (0-3), providing high-quality seed examples across all label levels.
 
 ### Step 2: Dataset Expansion via Generation
 Using the OpenAI API (GPT-5), we generated additional sentences for each label level. The generation prompts were designed to produce:
@@ -52,7 +52,7 @@ For detailed technical instructions on running the pipeline scripts, see [USAGE.
 # Run full pipeline for a trait
 uv run python expand_dataset.py \
   --trait "Aggression" \
-  --seed-file initial_hendrycks_data/aggression.csv \
+  --seed-file seed_data/aggression.csv \
   --label3-count 300 \
   --label2-count 250 \
   --label1-count 150 \
@@ -66,7 +66,7 @@ uv run python visualize_labels.py expanded_data/aggression.csv
 
 ```
 s0_dataset_generation/
-├── initial_hendrycks_data/    # 20 seed sentences per trait (labeled 0-3)
+├── seed_data/    # 20 seed sentences per trait (labeled 0-3)
 ├── expanded_data/             # Final merged datasets (seed + generated)
 ├── visualizations/            # Distribution plots
 ├── expand_dataset.py          # Main pipeline orchestrator

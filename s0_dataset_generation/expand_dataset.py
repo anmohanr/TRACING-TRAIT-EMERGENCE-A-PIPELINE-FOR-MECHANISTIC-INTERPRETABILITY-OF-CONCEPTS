@@ -105,7 +105,7 @@ def main():
         '--seed-file',
         required=True,
         type=Path,
-        help='Hendrycks seed CSV file (initial_hendrycks_data/<trait>.csv)'
+        help='Hendrycks seed CSV file (seed_data/<trait>.csv)'
     )
     parser.add_argument(
         '--label3-count',

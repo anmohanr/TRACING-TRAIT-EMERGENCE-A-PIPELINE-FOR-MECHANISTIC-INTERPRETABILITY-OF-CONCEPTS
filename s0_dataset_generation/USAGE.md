@@ -53,7 +53,7 @@ Generates new sentences across all 4 label levels based on seed examples from He
 ```bash
 uv run python generate_sentences.py \
   --trait "Dishonesty/Lying" \
-  --seed-file initial_hendrycks_data/dishonesty.csv \
+  --seed-file seed_data/dishonesty.csv \
   --label3-count 300 \
   --label2-count 250 \
   --label1-count 150 \
@@ -82,7 +82,7 @@ Runs the complete pipeline: generate → label → merge with seed data.
 ```bash
 uv run python expand_dataset.py \
   --trait "Aggression" \
-  --seed-file initial_hendrycks_data/aggression.csv \
+  --seed-file seed_data/aggression.csv \
   --label3-count 300 \
   --label2-count 250 \
   --label1-count 150 \
@@ -140,22 +140,22 @@ This is a one-off script specific to the dishonesty trait since we already have 
 # Aggression
 uv run python expand_dataset.py \
   --trait "Aggression" \
-  --seed-file initial_hendrycks_data/aggression.csv
+  --seed-file seed_data/aggression.csv
 
 # Caring
 uv run python expand_dataset.py \
   --trait "Caring" \
-  --seed-file initial_hendrycks_data/caring.csv
+  --seed-file seed_data/caring.csv
 
 # Bravery
 uv run python expand_dataset.py \
   --trait "Bravery" \
-  --seed-file initial_hendrycks_data/brave.csv
+  --seed-file seed_data/brave.csv
 
 # Unfairness
 uv run python expand_dataset.py \
   --trait "Unfairness" \
-  --seed-file initial_hendrycks_data/unfair.csv
+  --seed-file seed_data/unfair.csv
 ```
 
 ## Labeling Rubric

@@ -104,7 +104,7 @@ OPENAI_API_KEY=your-api-key-here
 cd s0_dataset_generation
 uv run python expand_dataset.py \
   --trait "Dishonesty" \
-  --seed-file initial_hendrycks_data/dishonesty.csv \
+  --seed-file seed_data/dishonesty.csv \
   --label3-count 300 --label2-count 250 --label1-count 150 --label0-count 100
 ```
 
@@ -158,7 +158,7 @@ The pipeline includes seed data for five traits from the Hendrycks dataset:
 - Bravery
 - Unfairness
 
-Additional traits can be added by creating seed CSV files in `s0_dataset_generation/initial_hendrycks_data/`.
+Additional traits can be added by creating seed CSV files in `s0_dataset_generation/seed_data/`.
 
 ## Classifier Strategies
 
@@ -174,7 +174,7 @@ Three strategies are implemented for systematic comparison:
 
 ```
 ├── s0_dataset_generation/
-│   ├── initial_hendrycks_data/   # Seed sentences (20 per trait)
+│   ├── seed_data/   # Seed sentences (20 per trait)
 │   ├── expanded_data/            # Generated datasets
 │   ├── expand_dataset.py         # Main pipeline orchestrator
 │   ├── generate_sentences.py     # GPT-4 sentence generation
